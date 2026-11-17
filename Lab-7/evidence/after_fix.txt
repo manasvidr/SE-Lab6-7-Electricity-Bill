@@ -1,0 +1,8 @@
+Expected fixed-function checks; run pytest locally for authoritative test output.
+
+units_consumed('1200:1350') -> 150
+units_consumed('5:5') -> 0
+daily_average('5,7,6') -> 6.0
+tariff_rate('DOM-A') -> 3
+tariff_rate('COM-B') -> 12
+Malformed inputs are rejected with ValueError.
